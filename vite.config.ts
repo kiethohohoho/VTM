@@ -30,7 +30,7 @@ export default defineConfig({
     drop: ['console', 'debugger'],
   },
   build: {
-    outDir: path.join(__dirname, 'build'),
+    outDir: path.join(__dirname, 'dist'),
     rollupOptions: {
       output: {
         esModule: true,
