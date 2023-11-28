@@ -1,0 +1,18 @@
+@import "../variable/variable";
+
+$kendo-color-primary: $primary-main;
+$kendo-color-secondary: $neutral-70;
+$kendo-color-tertiary: $orange-main;
+$kendo-color-info: $info-main;
+$kendo-color-success: $success-main;
+$kendo-color-warning: $warning-main;
+$kendo-color-error: $danger-main;
+$kendo-base-bg: $base;
+$kendo-button-disabled-bg: $neutral-20;
+$kendo-button-disabled-text: $neutral-70;
+$kendo-button-disabled-border: $neutral-50;
+
+@import "./button";
+@import "./input";
+@import "./dialog";
+@import "./avatar";

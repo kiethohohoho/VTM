@@ -1,0 +1,293 @@
+@use "sass:math";
+
+@mixin common($value, $field) {
+  @if $field == "bgColor" {
+    background-color: $value;
+  }
+  @if $field == "width" {
+    width: $value;
+  }
+  @if $field == "height" {
+    height: $value;
+  }
+  @if $field == "bgBoard" {
+    background-color: $value;
+  }
+  @if $field == "bgSize" {
+    background-size: $value;
+  }
+  @if $field == "bgRepeat" {
+    background-repeat: $value;
+  }
+  @if $field == "bgPosition" {
+    background-position: $value;
+  }
+  @if $field == "bgOrigin" {
+    background-origin: $value;
+  }
+  @if $field == "bgAttachment" {
+    background-attachment: $value;
+  }
+  @if $field == "bgWidth" {
+    background-attachment: $value;
+  }
+  @if $field == "padding" {
+    padding: $value;
+  }
+  @if $field == "paddingLeft" {
+    padding-left: $value;
+  }
+  @if $field == "paddingRight" {
+    padding-right: $value;
+  }
+  @if $field == "paddingBottom" {
+    padding-bottom: $value;
+  }
+  @if $field == "paddingTop" {
+    padding-top: $value;
+  }
+  @if $field == "paddingX" {
+    padding-right: $value;
+    padding-left: $value;
+  }
+  @if $field == "paddingY" {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+  @if $field == "borderWidthBottom" {
+    border: 0px;
+    border-bottom: 1px;
+    border-bottom-width: $value;
+  }
+  @if $field == "borderWidthTop" {
+    border: 0px;
+    border-top: 1px;
+    border-top-width: $value;
+  }
+  @if $field == "borderWidthRight" {
+    border: 0px;
+    border-right-width: $value;
+  }
+  @if $field == "borderWidthLeft" {
+    border: 0px;
+    border-left: 1px;
+    border-left-width: $value;
+  }
+  @if $field == "borderWidth" {
+    border-width: $value;
+  }
+  @if $field == "borderStyle" {
+    border-style: $value;
+  }
+  @if $field == "borderColor" {
+    border-color: $value;
+  }
+  @if $field == "borderRadius" {
+    border-radius: $value;
+  }
+  @if $field == "borderRadiusEnd" {
+    border-start-end-radius: $value;
+    border-end-end-radius: $value;
+  }
+  @if $field == "borderRadiusStart" {
+    border-start-start-radius: $value;
+    border-end-start-radius: $value;
+  }
+  @if $field == "borderRadiusTop" {
+    border-top-left-radius: $value;
+    border-top-right-radius: $value;
+  }
+  @if $field == "borderRadiusRight" {
+    border-top-right-radius: $value;
+    border-bottom-right-radius: $value;
+  }
+  @if $field == "borderRadiusBottom" {
+    border-bottom-right-radius: $value;
+    border-bottom-left-radius: $value;
+  }
+  @if $field == "borderRadiusLeft" {
+    border-top-left-radius: $value;
+    border-bottom-left-radius: $value;
+  }
+  @if $field == "borderRadiusStartStart" {
+    border-start-start-radius: $value;
+  }
+  @if $field == "borderRadiusStartEnd" {
+    border-start-end-radius: $value;
+  }
+  @if $field == "borderRadiusEndEnd" {
+    border-end-end-radius: $value;
+  }
+  @if $field == "borderRadiusEndStart" {
+    border-end-start-radius: $value;
+  }
+  @if $field == "borderRadiusTopLeft" {
+    border-top-left-radius: $value;
+  }
+  @if $field == "borderRadiusTopRight" {
+    border-top-right-radius: $value;
+  }
+  @if $field == "borderRadiusBottomRight" {
+    border-bottom-right-radius: $value;
+  }
+  @if $field == "textAlign" {
+    text-align: $value;
+  }
+  @if $field == "textColor" {
+    color: $value;
+  }
+  @if $field == "textFamily" {
+    font-family: $value, sans-serif;
+  }
+  @if $field == "left" {
+    left: $value;
+  }
+  @if $field == "top" {
+    top: $value;
+  }
+  @if $field == "right" {
+    right: $value;
+  }
+  @if $field == "bottom" {
+    bottom: $value;
+  }
+  @if $field == "zIndex" {
+    z-index: $value;
+  }
+  @if $field == "gap" {
+    gap: $value;
+  }
+  @if $field == "decoration" {
+    -webkit-text-decoration-line: $value;
+    text-decoration-line: $value;
+  }
+  @if $field == "justify" {
+    justify-content: $value;
+  }
+  @if $field == "items" {
+    align-items: $value;
+  }
+  @if $field == "gridCols" {
+    grid-template-columns: $value;
+  }
+  @if $field == "object" {
+    object-fit: $value;
+  }
+  @if $field == "backdrop" {
+    backdrop-filter: $value;
+  }
+  @if $field == "gridColumn" {
+    grid-column: $value;
+  }
+  @if $field == "gridColumnStart" {
+    grid-column-start: $value;
+  }
+  @if $field == "gridColumnEnd" {
+    grid-column-end: $value;
+  }
+  @if $field == "textTransform" {
+    text-transform: $value;
+  }
+  @if $field == "textIndent" {
+    text-indent: $value;
+  }
+  @if $field == "bgColorOpacity" {
+    background-color: $value;
+  }
+  @if $field == "opacity" {
+    opacity: math.div($value, 100);
+  }
+  @if $field == "shadow" {
+    box-shadow: $value;
+  }
+  @if $field == "buttonSize" {
+    padding: $value;
+  }
+  @if $field == "display" {
+    display: $value;
+  }
+  @if $field == "listType" {
+    list-style-type: $value;
+  }
+  @if $field == "overflow" {
+    overflow: $value;
+  }
+  @if $field == "overflowX" {
+    overflow-x: $value;
+  }
+  @if $field == "overflowY" {
+    overflow-y: $value;
+  }
+  @if $field == "flex" {
+    flex: $value;
+  }
+  @if $field == "flexDirection" {
+    flex-direction: $value;
+  }
+  @if $field == "flexWrap" {
+    flex-wrap: $value;
+  }
+}
+
+@mixin action($value, $action, $field) {
+  @if $action == false {
+    @include common($value, $field);
+  }
+  @if $action == "hover" {
+    &:hover {
+      @include common($value, $field);
+    }
+  }
+  @if $action == "focus" {
+    &:focus {
+      @include common($value, $field);
+    }
+  }
+  @if $action == "checked" {
+    &:checked {
+      @include common($value, $field);
+    }
+  }
+  @if $action == "after" {
+    &::after {
+      content: attr(content);
+      @include common($value, $field);
+    }
+  }
+  @if $action == "before" {
+    &::before {
+      content: attr(content);
+      @include common($value, $field);
+    }
+  }
+  @if $action == "focus-within" {
+    &:focus-within {
+      @include common($value, $field);
+    }
+  }
+  @if $action == "sm" {
+    @media screen and (max-width: 375px) {
+      @include common($value, $field);
+    }
+  }
+  @if $action == "md" {
+    @media screen and (max-width: 767px) and (min-width: 376px) {
+      @include common($value, $field);
+    }
+  }
+  @if $action == "lg" {
+    @media screen and (max-width: 1023px) {
+      @include common($value, $field);
+    }
+  }
+  @if $action == "xl" {
+    @media screen and (max-width: 1439px) {
+      @include common($value, $field);
+    }
+  }
+  @if $action == "xxl" {
+    @media screen and (max-width: 1920px) {
+      @include common($value, $field);
+    }
+  }
+}

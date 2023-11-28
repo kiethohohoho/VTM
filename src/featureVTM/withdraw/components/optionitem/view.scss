@@ -1,0 +1,25 @@
+.option-item-1660117104949 {
+	all: unset;
+	cursor: pointer;
+    width: auto;
+
+	padding: 0.8rem 1.6rem;
+	background-color:#fff;
+	border-radius: 0.5rem;
+	border: 1px solid #bdeaff;
+	transition: all 0.2s;
+	color: #1a5296;
+	text-align: center;
+
+	&.active {
+		border-color: #49bdf5;
+		background-color: #c6dde7;
+		font-weight: bold;
+	}
+
+	&:hover,
+	&:focus,
+	&:focus-visible {
+		background-color: #c6dde7;
+	}
+}

@@ -1,0 +1,36 @@
+.a-icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    &-home {
+        background-image: url('/src/assets/images/icon/home.svg');
+    }
+
+    &-error {
+        background-image: url('/src/assets/images/icon/error.svg');
+    }
+
+    &-loader {
+        background-image: url('/src/assets/images/icon/loader.svg');
+    }
+
+
+    &-18x18 {
+        height: 20px;
+        width: 20px;
+    }
+
+    &-24x24 {
+        height: 24px;
+        width: 24px;
+    }
+
+
+
+    &-32x32 {
+        height: 32px;
+        width: 32px;
+    }
+}

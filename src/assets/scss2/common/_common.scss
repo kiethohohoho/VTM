@@ -1,0 +1,453 @@
+@import "../mixin/mixin";
+@import "../variable/variable";
+@import "../keyframes/keyframes";
+
+.p {
+  @include padding(false);
+}
+.bg {
+  @include bg(false);
+  &-inherit {
+    background: inherit;
+  }
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.flex {
+  @include flex(false);
+}
+.justify {
+  @include justify(false);
+}
+.items {
+  @include items(false);
+}
+.gap {
+  @include gap(false);
+}
+.w {
+  @include width(false);
+  &-max {
+    max-width: 1920px;
+  }
+  &-full {
+    width: 100%;
+  }
+  &-0\.5 {
+    width: 0.125rem;
+  }
+  &-1\.5 {
+    width: 0.375rem;
+  }
+  &-2\.5 {
+    width: 0.625rem;
+  }
+  &-3\.5 {
+    width: 0.875rem;
+  }
+  &-1\/2 {
+    width: 50%;
+  }
+  &-1\/3 {
+    width: 33.333333%;
+  }
+  &-1\/4 {
+    width: 25%;
+  }
+  &-1\/5 {
+    width: 20%;
+  }
+  &-1\/6 {
+    width: 16.666667%;
+  }
+  &-1\/12 {
+    width: 8.333333%;
+  }
+  &-2\/3 {
+    width: 66.666667%;
+  }
+  &-2\/4 {
+    width: 50%;
+  }
+  &-2\/5 {
+    width: 40%;
+  }
+  &-2\/6 {
+    width: 33.333333%;
+  }
+  &-2\/12 {
+    width: 16.666667%;
+  }
+  &-3\/4 {
+    width: 75%;
+  }
+  &-3\/5 {
+    width: 60%;
+  }
+  &-3\/6 {
+    width: 50%;
+  }
+  &-3\/12 {
+    width: 25%;
+  }
+  &-4\/5 {
+    width: 80%;
+  }
+  &-4\/6 {
+    width: 66.666667%;
+  }
+  &-4\/12 {
+    width: 33.333333%;
+  }
+  &-5\/6 {
+    width: 83.333333%;
+  }
+  &-5\/12 {
+    width: 41.666667%;
+  }
+  &-6\/12 {
+    width: 50%;
+  }
+  &-7\/12 {
+    width: 58.333333%;
+  }
+  &-8\/12 {
+    width: 66.666667%;
+  }
+  &-9\/12 {
+    width: 75%;
+  }
+  &-10\/12 {
+    width: 83.333333%;
+  }
+  &-11\/12 {
+    width: 91.666667%;
+  }
+}
+.h {
+  @include height(false);
+  &-fullDevice {
+    height: 100%;
+    min-height: 100dvh;
+  }
+  &-0\.5 {
+    height: 0.125rem; /* 2px */
+  }
+  &-1\.5 {
+    height: 0.375rem; /* 6px */
+  }
+  &-2\.5 {
+    height: 0.625rem; /* 10px */
+  }
+  &-3\.5 {
+    height: 0.875rem; /* 14px */
+  }
+  &-1\/2 {
+    height: 50%;
+  }
+  &-1\/3 {
+    height: 33.333333%;
+  }
+  &-1\/4 {
+    height: 25%;
+  }
+  &-1\/5 {
+    height: 20%;
+  }
+  &-1\/6 {
+    height: 16.666667%;
+  }
+  &-2\/3 {
+    height: 66.666667%;
+  }
+  &-2\/4 {
+    height: 50%;
+  }
+  &-2\/5 {
+    height: 40%;
+  }
+  &-2\/6 {
+    height: 33.333333%;
+  }
+  &-3\/4 {
+    height: 75%;
+  }
+  &-3\/5 {
+    height: 60%;
+  }
+  &-3\/6 {
+    height: 50%;
+  }
+  &-4\/5 {
+    height: 80%;
+  }
+  &-4\/6 {
+    height: 66.666667%;
+  }
+  &-5\/6 {
+    height: 83.333333%;
+  }
+}
+.shadow {
+  @include shadow(false);
+}
+.m {
+  @include margin(false);
+}
+.rounded {
+  border-radius: 0.25rem;
+  @include rounded(false);
+}
+.border {
+  border-width: 1px;
+  @include border(false);
+}
+.text {
+  @include text(false);
+  @each $name, $size, $lineHeight in $fontSize {
+    &-#{$name} {
+      font-size: $size;
+      line-height: $lineHeight;
+    }
+  }
+}
+.cursor {
+  @each $name, $value in $cursor {
+    &-#{$name} {
+      cursor: $value;
+    }
+  }
+}
+.opacity {
+  @include opacity(false);
+}
+
+.grid-cols {
+  @include gridCols(false);
+}
+.object {
+  @include object(false);
+}
+.backdrop {
+  @include backdrop(false);
+}
+.col {
+  @include col(false);
+}
+.indent {
+  @include indent(false);
+
+  &-0\.5 {
+    text-indent: 0.125rem;
+  }
+
+  &-1\.5 {
+    text-indent: 0.375rem;
+  }
+  &-2\.5 {
+    text-indent: 0.625rem;
+  }
+  &-3\.5 {
+    text-indent: 0.875rem;
+  }
+}
+.font {
+  @each $name, $value in $fontWeight {
+    &-#{$name} {
+      font-weight: $value;
+    }
+  }
+}
+.top {
+  @include top(false);
+  &-1\/2 {
+    top: 50%;
+  }
+  &-1\/3 {
+    top: 33.333333%;
+  }
+  &-1\/4 {
+    top: 25%;
+  }
+  &-1\/5 {
+    top: 20%;
+  }
+  &-1\/6 {
+    top: 16.666667%;
+  }
+  &-1\/12 {
+    top: 8.333333%;
+  }
+}
+.bottom {
+  @include bottom(false);
+  &-1\/2 {
+    bottom: 50%;
+  }
+  &-1\/3 {
+    bottom: 33.333333%;
+  }
+  &-1\/4 {
+    bottom: 25%;
+  }
+  &-1\/5 {
+    bottom: 20%;
+  }
+  &-1\/6 {
+    bottom: 16.666667%;
+  }
+  &-1\/12 {
+    bottom: 8.333333%;
+  }
+}
+.right {
+  @include right(false);
+  &-1\/2 {
+    right: 50%;
+  }
+  &-1\/3 {
+    right: 33.333333%;
+  }
+  &-1\/4 {
+    right: 25%;
+  }
+  &-1\/5 {
+    right: 20%;
+  }
+  &-1\/6 {
+    right: 16.666667%;
+  }
+  &-1\/12 {
+    right: 8.333333%;
+  }
+}
+.left {
+  @include left(false);
+}
+.z {
+  @include zIndex(false);
+}
+.button {
+  @include buttonSize(false);
+}
+@include textTransform(false);
+@include decoration(false);
+@include display(false);
+
+@each $name in $action {
+  .#{$name} {
+    @include commonPropertiesAction($name);
+  }
+}
+
+.group {
+  @each $name in $action {
+    @include group($name);
+  }
+}
+
+@each $name in $screen {
+  .#{$name} {
+    @include commonPropertiesAction($name);
+  }
+}
+
+.list {
+  @include listType(false);
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.text-clip {
+  text-overflow: clip;
+}
+
+.logo {
+  position: relative;
+  h2 {
+    color: $primary-border;
+    font-size: 2.5em;
+    position: absolute;
+    right: 0;
+    transform: translateY(-50px) translateX(100px);
+    &:nth-child(1) {
+      color: $primary-border;
+      -webkit-text-stroke: 2px $primary-border;
+    }
+
+    &:nth-child(2) {
+      color: $primary-border;
+      animation: animateText 4s ease-in-out infinite;
+    }
+  }
+}
+
+.overflow {
+  @include overflow(false);
+  &-x {
+    @include overflowX(false);
+  }
+  &-y {
+    @include overflowY(false);
+  }
+}
+
+.scroll {
+  &::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: $neutral-50;
+  }
+}
+
+.linear-activity {
+  overflow: hidden;
+  width: 35%;
+  // height: 4px;
+  height: 50px;
+  background-color: #f8dbdd;
+  margin: 20px auto;
+}
+
+.indeterminate {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  &:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: #f65365;
+    animation: indeterminate_first 1.5s infinite ease-out;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: #ff9ca2;
+    animation: indeterminate_second 1.5s infinite ease-in;
+  }
+}

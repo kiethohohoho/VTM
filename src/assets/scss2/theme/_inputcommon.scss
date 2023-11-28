@@ -1,0 +1,19 @@
+.input-common {
+
+    &.size-small{
+        input{
+            padding:2px 8px ;
+            font-size: 14px;
+            line-height: 1.4285714286,
+        }
+        
+    }
+    &.size-large{
+        input {
+            padding: 10px ;
+            font-size: 16px;
+            line-height: 1.4285714286,
+        }
+           
+    }
+}

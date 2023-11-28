@@ -1,0 +1,122 @@
+@import "../../../assets/scss2/variable/variable";
+
+$widthDImage: 1024px;
+$heightDImage: calc(100vh - 200px);
+
+.ls-dImage {
+  &_width {
+    width: $widthDImage;
+    display: flex;
+    gap: 16px;
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      flex-direction: column;
+      width: 700px;
+    }
+  }
+
+  &_Dheight {
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      min-height: 595px;
+    }
+  }
+
+  &_height {
+    height: $heightDImage;
+  }
+
+  &_pl {
+    padding-left: 12px;
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      padding-left: 0px;
+    }
+  }
+
+  &_icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    font-size: 30px;
+    transition: font-size 0.4s;
+    padding: 8px;
+    border-radius: 9999px;
+    background-color: rgba($color: #fff, $alpha: 0.5);
+    &:hover {
+      font-size: 40px;
+      background-color: rgba($color: #fff, $alpha: 0.5);
+    }
+  }
+
+  &_iconL {
+    left: 10px;
+  }
+
+  &_iconR {
+    right: 10px;
+  }
+
+  &_close {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      color: #fff;
+    }
+  }
+
+  &_list {
+    width: 300px;
+    min-width: 300px;
+    padding: 40px 24px 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      width: 100%;
+    }
+    &-item {
+      width: 90px;
+      height: 90px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+      opacity: 1;
+      transition: opacity 0.4s;
+      border: 2px solid;
+      border-color: transparent;
+      @media screen and (min-width: 768px) and (max-width: 1439px) {
+        height: 90px;
+        min-width: 90px;
+      }
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &-active {
+        opacity: 0.6;
+        border-color: $primary;
+      }
+    }
+  }
+
+  &_lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      display: flex;
+      width: 700px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+    }
+  }
+}

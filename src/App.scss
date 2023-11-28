@@ -1,0 +1,112 @@
+@font-face {
+  font-family: Mulish-Black;
+  src: url("/src/assets/font/Mulish-Black.ttf");
+}
+
+@font-face {
+  font-family: Mulish-BlackItalic;
+  src: url("/src/assets/font/Mulish-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: Mulish-Bold;
+  src: url("/src/assets/font/Mulish-Bold.ttf");
+}
+
+@font-face {
+  font-family: Mulish-BoldItalic;
+  src: url("/src/assets/font/Mulish-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: Mulish-ExtraBold;
+  src: url("/src/assets/font/Mulish-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: Mulish-ExtraBoldItalic;
+  src: url("/src/assets/font/Mulish-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: Mulish-Light;
+  src: url("/src/assets/font/Mulish-Light.ttf");
+}
+
+@font-face {
+  font-family: Mulish-ExtraLight;
+  src: url("/src/assets/font/Mulish-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: Mulish-ExtraLightItalic;
+  src: url("/src/assets/font/Mulish-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: Mulish-Italic;
+  src: url("/src/assets/font/Mulish-Italic.ttf");
+}
+
+@font-face {
+  font-family: Mulish-LightItalic;
+  src: url("/src/assets/font/Mulish-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: Mulish-Medium;
+  src: url("/src/assets/font/Mulish-Medium.ttf");
+}
+
+@font-face {
+  font-family: Mulish-MediumItalic;
+  src: url("/src/assets/font/Mulish-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: Mulish-Regular;
+  src: url("/src/assets/font/Mulish-Regular.ttf");
+}
+
+@font-face {
+  font-family: Mulish-SemiBold;
+  src: url("/src/assets/font/Mulish-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Mulish-SemiBoldItalic;
+  src: url("/src/assets/font/Mulish-SemiBoldItalic.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish-Medium", sans-serif;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 8px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #61677a;
+  }
+}
+
+
+@import "./assets/scss2/theme/theme";
+@import "./assets/scss2/common/common";
+@import "@progress/kendo-theme-default/dist/all.scss";
+.k-animation-container {
+  z-index: 1000003 !important;
+}
+
+@import "./coreVTM/image/index.scss";
+@import "./coreVTM/iconv2/index.scss";

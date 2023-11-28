@@ -1,0 +1,30 @@
+@import "../../assets/scss/variable/variable";
+
+.ls-profile {
+  &_mt {
+    margin-top: 80px;
+  }
+  &_translateY-l {
+    &3 {
+      //   transform: translateY(-40%);
+    }
+  }
+
+  &_widthForm {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  &-grid {
+    &_col3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: start;
+    }
+
+    &_col1-3 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+  }
+}

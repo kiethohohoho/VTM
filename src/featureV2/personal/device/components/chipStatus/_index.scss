@@ -1,0 +1,24 @@
+@import "../../../../../assets/scss2/variable/variable";
+
+$bgChipStatus: (
+  "success": $success,
+  "warning": $warning,
+  "info": $info-hover,
+  "error": $danger-hover,
+);
+
+.ls-chipStatus {
+  @each $name, $color in $bgChipStatus {
+    &_#{$name} {
+      background-color: $color;
+      padding: 6px;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      min-width: 80px;
+      color: white;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+  }
+}

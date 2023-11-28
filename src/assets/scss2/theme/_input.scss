@@ -1,0 +1,32 @@
+$kendo-input-sizes: (
+  sm: (
+    padding-x: 8px,
+    padding-y: 2px,
+    font-size: 14px,
+    line-height: 1.4285714286,
+    button-padding-x: 2px,
+    button-padding-y: 2px,
+  ),
+  md: (
+    padding-x: 10px,
+    padding-y: 10px,
+    font-size: 16px,
+    line-height: 1.4285714286,
+    button-padding-x: 4px,
+    button-padding-y: 4px,
+  ),
+  lg: (
+    padding-x: 8px,
+    padding-y: 8px,
+    font-size: 16px,
+    line-height: 1.5,
+    button-padding-x: 8px,
+    button-padding-y: 8px,
+  ),
+);
+
+$kendo-input-padding-x: 10px;
+$kendo-input-padding-y: 10px;
+$kendo-input-border-radius: 8px;
+$kendo-input-disabled-bg: $neutral-20;
+$kendo-input-disabled-border: $neutral-40;

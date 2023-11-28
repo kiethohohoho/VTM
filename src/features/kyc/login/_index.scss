@@ -1,0 +1,70 @@
+@import "../../../assets/scss/variable/variable";
+
+.text-center {
+  text-align: center;
+}
+.text-login-other {
+  font-weight: 600;
+}
+.social-icons .icon,
+.social-icons .icon:before,
+.social-icons .icon .k-svg-icon {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  font-size: 38px;
+  vertical-align: middle;
+}
+
+.social-icons .icon.facebook:before {
+  background-color: $sky-500;
+}
+.social-icons .icon.facebook .k-svg-icon {
+  color: $sky-500;
+}
+.social-icons .icon.google:before {
+  background-color: $hot-900;
+}
+.social-icons .icon.google .k-svg-icon {
+  color: $hot-900;
+}
+.social-icons .icon:focus:before,
+.social-icons .icon:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-icons .icon:focus .k-svg-icon,
+.social-icons .icon:hover .k-svg-icon {
+  color: $white;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.social-icons .icon {
+  display: inline-block;
+  background-color: $white;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  opacity: 0.99;
+  border: 1px solid $dark-500;
+  cursor: pointer;
+}
+.social-icons .icon:before {
+  top: 90%;
+  left: -110%;
+  content: "";
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

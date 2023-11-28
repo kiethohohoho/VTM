@@ -1,0 +1,139 @@
+{
+  "api": {
+    "host": "https://api.dev.locstoc.com",
+    "static": {
+      "host": "https://io.dev.locstoc.com"
+    },
+    "vtmUser": {
+      "kyc": {
+        "login": "/vtmUser/login",
+        "logout": "/vtmUser/logout",
+        "forgot": {
+          "_": "/vtmUser/password",
+          "email": "/vtmUser/forgot/email"
+        },
+        "selectStore": "/vtmUser/selectStore",
+        "register": "/vtmUser/register",
+        "otp": "/vtmUser/otp",
+        "profile": "/vtmUser/profile"
+      },
+      "store": "/vtmUser/store",
+      "staff": {
+        "_": "/vtmUser/staff",
+        "invite": "/vtmUser/staff/invite",
+        "otp": "/vtmUser/staff/otp",
+        "checkToken": "/vtmUser/staff/checkToken",
+        "groupStaff": "/vtmUser/group"
+      },
+      "consumer": "/vtmUser/consumer",
+      "warehouse": {
+        "_": "/vtmUser/warehouse",
+        "list": "/vtmUser/warehouse/list"
+      },
+      "device": "/vtmUser/device",
+      "category": {
+        "_": "/vtmUser/category",
+        "categoryId": "/vtmUser/categoryId"
+      },
+      "notification": "/vtmUser/notification"
+    },
+    "lsUser": {
+      "kyc": {
+        "login": "/lsUser/login",
+        "logout": "/lsUser/logout",
+        "forgot": {
+          "_": "/lsUser/password",
+          "email": "/lsUser/forgot/email"
+        },
+        "selectStore": "/lsUser/selectStore",
+        "register": "/lsUser/register",
+        "otp": "/lsUser/otp",
+        "profile": "/lsUser/profile"
+      },
+      "store": "/lsUser/store",
+      "staff": {
+        "_": "/lsUser/staff",
+        "invite": "/lsUser/staff/invite",
+        "otp": "/lsUser/staff/otp",
+        "checkToken": "/lsUser/staff/checkToken",
+        "groupStaff": "/lsUser/group"
+      },
+      "consumer": "/lsUser/consumer",
+      "warehouse": {
+        "_": "/lsUser/warehouse",
+        "list": "/lsUser/warehouse/list"
+      },
+      "device": "/lsUser/device",
+      "category": {
+        "_": "/lsUser/category",
+        "categoryId": "/lsUser/categoryId"
+      },
+      "notification": "/lsUser/notification"
+    },
+    "lsProduct": {
+      "product": "/lsProduct/productManagement",
+      "retailerProduct": "/lsProduct/retailerProduct",
+      "retailerUpload": "/lsProduct/upload/retailer",
+      "productDictionary": "/lsProduct/productDictionary",
+      "goods": "/lsProduct/productManagement/goods",
+      "checkMultipleBarcode": "/lsProduct/productManagement/goods/multiple",
+      "currency": "/lsProduct/currency",
+      "sku": "/lsProduct/sku",
+      "category": {
+        "_": "/lsProduct/category",
+        "categoryO2o": {
+          "_": "/lsProduct/categoryO2o"
+        },
+        "categoryInStore": {
+          "_": "/lsProduct/categoryInStore",
+          "product": "/lsProduct/categoryInStore/product"
+        }
+      }
+    },
+    "lsOrder": {
+      "order": "/lsOrder/order",
+      "dashboard": {
+        "sale": "/lsOrder/dashboard/sale"
+      },
+      "orderGoods": "/lsOrder/orderGoods",
+      "consumer": "/lsOrder/consumer",
+      "payment": "/lsOrder/payment",
+      "o2oOrderManagement": "/lsOrder/o2oOrderManagement",
+      "o2oOrderManagementSearch": "/lsOrder/o2oOrderManagement/search"
+    },
+    "ocr": {
+      "idCard": "https://ai.dev.locstoc.com/id_card/",
+      "business_license": "https://ai.dev.locstoc.com/business_license/business_license"
+    }
+  },
+  "cookie": {
+    "auth": "83faf9b8a880426fa20719bb223b1fce",
+    "profile": "114518eb922b4370a5b61894cb3a40db",
+    "rsaKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0+B5KsZ/Q4c252WDMHVf4TPtoWwfTiikKu7NGkGaleBWZbDTyql4Cxf6aTMrIyqfYShGCVFWhJgNSmAbqkzvRr9BJVbyTVXppbTbeCKplpFso6IoMBXMizq3P+5VyvS+YFhPrCzDv5iFvMgnmkjlRm3rUZ0Nd22UdIh1Rvb3A/AnnzHR1PEqyYaS4/kzHgwKO0H404QTTA8Js67pA/WC4Bv/6fnE/GXMwsoWzZXwPeofSBkXFNsj2nrXROUfDzUmUQaMZT4monOt1ihzyRiF7+yHk6jmtFNU8KgrX2rnkqtpSCl524zFR9fztZplq2VqvpuefQNuBy3y5Ss1EnY24wIDAQAB",
+    "expireAt": "4948cec3271248138e076c5b2264fb63"
+  },
+  "firebase": {
+    "app": {
+      "apiKey": "AIzaSyBIFEFI89NRgkVwyPbQfS-KOb1Cjvdqkug",
+      "authDomain": "testls-8f0d1.firebaseapp.com",
+      "projectId": "testls-8f0d1",
+      "storageBucket": "testls-8f0d1.appspot.com",
+      "messagingSenderId": "481776257236",
+      "appId": "1:481776257236:web:8742360f5383dd4d1b5341"
+    }
+  },
+  "locale": "vn",
+  "pushKey": "9b648330ede942259e83dd7044e98d55",
+  "deviceKey": "b054ba6e-f0f7-4805-9720-8b0ca6505aa5",
+  "deviceType": 0,
+  "password": {
+    "cost": "12",
+    "alg": "$2a$",
+    "salt": "fkqHb.cOSu/HMnd7leXe7u"
+  },
+  "ocr": {
+    "username": "stelai",
+    "password": "St3lAI@0304006187",
+    "basicAuthString": "Basic c3RlbGFpOlN0M2xBSUAwMzA0MDA2MTg"
+  }
+}

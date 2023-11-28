@@ -1,0 +1,42 @@
+.item-render {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  &__action {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    z-index: 2;
+  }
+}
+
+.upload {
+  height: 100% !important;
+  width: 100% !important;
+  :global {
+    .ant-upload-list-item-container {
+      transition: none !important;
+    }
+    .ant-upload-list {
+      height: 100% !important;
+      width: 100% !important;
+    }
+    .ant-upload-select {
+      height: 100% !important;
+      width: 100% !important;
+    }
+
+    .ant-upload-list-item-container {
+      height: 100% !important;
+      width: 100% !important;
+    }
+
+    img {
+      height: 100% !important;
+      width: 100% !important;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+}
